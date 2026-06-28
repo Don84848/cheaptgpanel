@@ -1,0 +1,21 @@
+{
+  "name": "telegram-bot-worker",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy src/index.ts",
+    "set-webhook": "node set-webhook.mjs"
+  },
+  "dependencies": {
+    "grammy": "^1.31.0",
+    "@libsql/client": "^0.17.4",
+    "drizzle-orm": "^0.44.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241218.0",
+    "typescript": "^5.7.0",
+    "wrangler": "^3.101.0"
+  }
+}
